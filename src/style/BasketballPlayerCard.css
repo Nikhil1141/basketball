@@ -1,0 +1,97 @@
+.player-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.imgg {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-bodyy {
+    padding: 20px;
+}
+
+.card-bodyy h5 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-bodyy p {
+    margin: 5px 0;
+    font-size: 1.1em;
+    color: #666;
+}
+
+.player-stats {
+    margin: 15px 0;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.player-stats p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .player-card {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .imgg {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-bodyy h5 {
+        font-size: 1.2em;
+    }
+
+    .card-bodyy p {
+        font-size: 1em;
+    }
+
+    .player-stats p {
+        font-size: 0.9em;
+    }
+}
